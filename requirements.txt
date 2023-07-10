@@ -1,6 +1,6 @@
 python-docx==0.8.11
 streamlit==1.22.0
-openai-whisper
+git+https://github.com/openai/whisper.git
 ffmpeg-python==0.2.0
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch
