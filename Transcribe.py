@@ -100,7 +100,8 @@ if "transcription" in st.session_state:
         # save transcript as docx. in local folder
         file_name = output['name'] + "-" + whisper_model + \
             "-" + datetime.today().strftime('%d-%m-%y') + ".docx"
-        doc.save(save_dir + file_name)
+        #doc.save(save_dir + file_name)
+        doc.save(file_name)
 
         bio = io.BytesIO()
         doc.save(bio)
